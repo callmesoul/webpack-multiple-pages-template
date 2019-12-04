@@ -1,0 +1,13 @@
+$width: 10px;
+$height: $width+20px;
+
+#header {
+    display: flex;
+    width: $width;
+    height: $height;
+    background: red;
+}
+
+body {
+    background-image: url(./20181029094046850.jpg);
+}
