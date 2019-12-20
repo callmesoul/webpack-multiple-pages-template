@@ -1,13 +1,13 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {
   getEntry,
   getHtmlConfig
 } = require('./until')
 const {
   CleanWebpackPlugin
-} = require('clean-webpack-plugin');
+} = require('clean-webpack-plugin')
 
 // 配置页面
 var entryObj = getEntry()
@@ -35,7 +35,7 @@ module.exports = {
   entry: getEntry(),
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'assets/js/[name]_[hash].js',
+    filename: 'assets/js/[name]_[hash].js'
   },
   module: {
     rules: [{
