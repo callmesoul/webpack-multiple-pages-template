@@ -59,7 +59,8 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name: '[name]_[hash].[ext]',
-          outputPath: './assets/images'
+          outputPath: './assets/images',
+          esModule: false
         }
       }]
     }, {
